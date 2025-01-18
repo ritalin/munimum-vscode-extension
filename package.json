@@ -8,8 +8,8 @@
   "browser": "./dist/extension.js",
   "scripts": {
     "build": "tsc",
-		"web": "vscode-test-web --browserType=firefox --extensionDevelopmentPath=.",
-		"code": "code --profile-temp --inspect-extensions --extensionDevelopmentPath=\"$PWD\""
+		"web": "vscode-test-web --extensionDevelopmentPath=.",
+		"code": "code --profile-temp --extensionDevelopmentPath=\"$PWD\""
   },
   "devDependencies": {
     "@vscode/test-web": "^0.0.65",
