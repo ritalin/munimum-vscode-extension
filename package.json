@@ -1,0 +1,22 @@
+{
+  "name": "my-console-extension",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "main": "./dist/extension.js",
+  "browser": "./dist/extension.js",
+  "scripts": {
+    "build": "tsc",
+		"web": "vscode-test-web --browserType=firefox --extensionDevelopmentPath=.",
+		"code": "code --profile-temp --inspect-extensions --extensionDevelopmentPath=\"$PWD\""
+  },
+  "devDependencies": {
+    "@vscode/test-web": "^0.0.65",
+    "@types/vscode": "^1.96.0",
+    "typescript": "^5.7.3"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ]
+}
